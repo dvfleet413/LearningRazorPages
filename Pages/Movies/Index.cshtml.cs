@@ -6,14 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RazorPagesMovie.Models;
+using RazorPagesMovie.Data;
 
 namespace RazorPagesMovie.Pages.Movies
 {
     public class IndexModel : PageModel
     {
-        private readonly RazorPagesMovie.Models.RazorPagesMovieContext _context;
+        private readonly RazorPagesMovie.Data.RazorPagesMovieContext _context;
 
-        public IndexModel(RazorPagesMovie.Models.RazorPagesMovieContext context)
+        public IndexModel(RazorPagesMovie.Data.RazorPagesMovieContext context)
         {
             _context = context;
         }

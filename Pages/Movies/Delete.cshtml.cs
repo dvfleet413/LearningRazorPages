@@ -6,14 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RazorPagesMovie.Models;
+using RazorPagesMovie.Data;
 
 namespace RazorPagesMovie.Pages.Movies
 {
     public class DeleteModel : PageModel
     {
-        private readonly RazorPagesMovie.Models.RazorPagesMovieContext _context;
+        private readonly RazorPagesMovie.Data.RazorPagesMovieContext _context;
 
-        public DeleteModel(RazorPagesMovie.Models.RazorPagesMovieContext context)
+        public DeleteModel(RazorPagesMovie.Data.RazorPagesMovieContext context)
         {
             _context = context;
         }
